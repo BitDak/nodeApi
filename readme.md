@@ -4,29 +4,8 @@
 
 ​	通过node.js实现后台数据库为mysql下的RestFul Api。
 
-### package.json
-
-``````json
-{
-  "name": "nodeapi",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "body-parser": "^1.19.0",
-    "express": "^4.17.1",
-    "mysql": "^2.17.1"
-  }
-}
-``````
-
 ###编制api
+
 | 序号 | URL               | Http方法 | 发送内容  | 方法实现的功能     |
 | ---- | ----------------- | -------- | --------- | ------------------ |
 | 1    | /api/listUsers    | GET      | （空）    | 显示所有用户记录   |
@@ -43,7 +22,7 @@
 ### 测试
 
 
-#####1.  GET方法实现listUsers
+#####GET方法实现listUsers
 
    URL	`http://localhost:3000/api/listusers/`
 
@@ -62,7 +41,7 @@ Something is happening.
 listUsers called
 ``````
 
-#####2.  GET方法实现listUserInfo
+#####GET方法实现listUserInfo
 
    URL	`http://localhost:3000/api/listUserInfo1`
 
@@ -80,7 +59,7 @@ listUserInfo called, id: 1
 RowDataPacket { id: 1, username: 'wangwu', password: 'lisi' }
 ``````
 
-#####3.  POST方法实现addUser
+#####POST方法实现addUser
 
    URL	`http://localhost:3000/api/addUser/`
 
@@ -108,7 +87,7 @@ addUser called
 { username: 'postTest', password: 'postTest' }
 ``````
 
-#####4.  DELETE方法实现deleteUser
+#####DELETE方法实现deleteUser
 
 ​	URL	`http://localhost:3000/api/deleteUser1/`
 
@@ -126,7 +105,7 @@ deleteUser called, id=1
 ``````
 
 
-#####5.  PUT方法实现updateUser
+#####PUT方法实现updateUser
 
 ​	URL	`http://localhost:3000/api/updateUser3/`
 
@@ -150,7 +129,7 @@ updateUser called
 { username: 'updateUser', password: 'updatePassword', id: '3' }
 ``````
 
-#####6.  PATCH方法实现patch
+#####PATCH方法实现patch
 
 ​	URL	`http://localhost:3000/api/patchUser2/`
 
