@@ -7,8 +7,8 @@
 ​	通过node.js实现后台数据库为mysql下的RestFul Api。
 
 
+### 编制api
 
-###编制api
 
 | 序号 | URL               | Http方法 | 发送内容  | 方法实现的功能     |
 | ---- | ----------------- | -------- | --------- | ------------------ |
@@ -21,7 +21,7 @@
 
 
 
-###引用关系：
+### 引用关系：
 
 ​	server.js—>route.js—>userDao.js & result.js（其中userDao.js—>userSqlMap.js & mysqlConf.js)
 
@@ -31,7 +31,7 @@
 
 
 
-#####GET方法实现listUsers
+##### GET方法实现listUsers
 
    URL	`http://localhost:3000/api/listusers/`
 
@@ -52,7 +52,7 @@ listUsers called
 
 
 
-#####GET方法实现listUserInfo
+##### GET方法实现listUserInfo
 
    URL	`http://localhost:3000/api/listUserInfo1`
 
@@ -72,7 +72,7 @@ RowDataPacket { id: 1, username: 'wangwu', password: 'lisi' }
 
 
 
-#####POST方法实现addUser
+##### POST方法实现addUser
 
    URL	`http://localhost:3000/api/addUser/`
 
@@ -102,7 +102,7 @@ addUser called
 
 
 
-#####DELETE方法实现deleteUser
+##### DELETE方法实现deleteUser
 
 ​	URL	`http://localhost:3000/api/deleteUser1/`
 
@@ -121,7 +121,7 @@ deleteUser called, id=1
 
 
 
-#####PUT方法实现updateUser
+##### PUT方法实现updateUser
 
 ​	URL	`http://localhost:3000/api/updateUser3/`
 
@@ -147,7 +147,7 @@ updateUser called
 
 
 
-#####PATCH方法实现patch
+##### PATCH方法实现patch
 
 ​	URL	`http://localhost:3000/api/patchUser2/`
 
