@@ -1,7 +1,7 @@
-create database `express-mysql-demo`;
-use `express-mysql-demo`;
+create database `mysqlDatabase`;
+use `mysqlDatabase`;
 
-CREATE TABLE `express-mysql-demo`.`user` (
+CREATE TABLE `mysqlDatabase`.`user` (
   `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `username` VARCHAR(45) NOT NULL,
   `password` VARCHAR(45) NOT NULL,

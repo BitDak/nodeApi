@@ -5,7 +5,7 @@ var router = express.Router();
 var userDAO = require('../dao/userDAO');
 var result = require('../model/result');
 
-//服务器控制台反馈：Api to use for all requests
+//服务器控制台反馈：Api to use about requests
 router.use(function(req, res, next) {
     // do logging
     console.log('Something is happening.');
