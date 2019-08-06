@@ -1,8 +1,12 @@
 ## Node.js实现restful API
 
+
+
 ### 简述
 
 ​	通过node.js实现后台数据库为mysql下的RestFul Api。
+
+
 
 ###编制api
 
@@ -15,11 +19,16 @@
 | 5    | /api/updateUser   | PUT      | id & JSON | 更新用户记录       |
 | 6    | /api/patchUser    | PATCH    | id & JSON | 更新用户记录       |
 
+
+
 ###引用关系：
 
 ​	server.js—>route.js—>userDao.js & result.js（其中userDao.js—>userSqlMap.js & mysqlConf.js)
 
+
+
 ### 测试
+
 
 
 #####GET方法实现listUsers
@@ -41,6 +50,8 @@ Something is happening.
 listUsers called
 ``````
 
+
+
 #####GET方法实现listUserInfo
 
    URL	`http://localhost:3000/api/listUserInfo1`
@@ -58,6 +69,8 @@ Something is happening.
 listUserInfo called, id: 1
 RowDataPacket { id: 1, username: 'wangwu', password: 'lisi' }
 ``````
+
+
 
 #####POST方法实现addUser
 
@@ -87,6 +100,8 @@ addUser called
 { username: 'postTest', password: 'postTest' }
 ``````
 
+
+
 #####DELETE方法实现deleteUser
 
 ​	URL	`http://localhost:3000/api/deleteUser1/`
@@ -103,6 +118,7 @@ addUser called
 Something is happening.
 deleteUser called, id=1
 ``````
+
 
 
 #####PUT方法实现updateUser
@@ -128,6 +144,8 @@ Something is happening.
 updateUser called
 { username: 'updateUser', password: 'updatePassword', id: '3' }
 ``````
+
+
 
 #####PATCH方法实现patch
 
